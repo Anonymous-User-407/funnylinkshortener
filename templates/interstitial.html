@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <meta
+      http-equiv="refresh"
+      content="5; url={{ url_for('proceed', short_code=short_code) }}"
+    />
+  </head>
+  <body>
+    <h1>Please wait while we redirect you...</h1>
+    <p>You will be redirected to your destination shortly.</p>
+
+    <!-- Google AdSense ad integration -->
+    <div>
+      <h2>Sponsored Ad</h2>
+      <!-- AdSense code (replace the client value with yours) -->
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5003831996766132"
+        crossorigin="anonymous"
+      ></script>
+      <ins
+        class="adsbygoogle"
+        style="display: block; text-align: center"
+        data-ad-format="autorelaxed"
+        data-ad-client="ca-pub-5003831996766132"
+        data-ad-slot="1277945077"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <p>
+      If you are not redirected,
+      <a href="{{ url_for('proceed', short_code=short_code) }}">click here</a>.
+    </p>
+  </body>
+</html>
